@@ -2,7 +2,8 @@
 FMX下通用可扩展的属性编辑器
 
 
-1、构造示例
+构造示例:
+```Delphi
   FEditorInspector:= TEditorInspector.Create(lytLeft);
   FEditorInspector.Parent:= lytLeft;
   FEditorInspector.Align:= TAlignLayout.Client;
@@ -13,9 +14,12 @@ FMX下通用可扩展的属性编辑器
   FEditorInspector.RegisterPropEditor('TImageFileName', TImageFilePropEditor);
   FEditorInspector.RegisterPropEditor('TStringListText', TStringListTextPropEditor);
   FEditorInspector.RegisterPropEditor('TActionName', TActionNamePropEditor);
-  
-2、调用示例
+```
+
+调用示例:
+```Delphi
 procedure TMainFrm.pbxRendererMouseLeave(Sender: TObject);
 begin
   FEditorInspector.Select(Sender);
 end;
+```
