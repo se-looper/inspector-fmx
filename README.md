@@ -23,3 +23,6 @@ begin
   FEditorInspector.Select(Sender);
 end;
 ```
+
+效果图:
+![inspector screenshot](https://github.com/se-looper/inspector-fmx/blob/main/inspector.png)
