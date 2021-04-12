@@ -27,6 +27,7 @@ type
 
     procedure Select(const AObject: TObject);
     procedure Update(const APropName: string; const APropValue: TValue);
+    procedure Filter(const AFilterText: string);
 
     procedure RegisterPropEditor(const ATypeKind: TTypeKind;
       const AEditorClass: TAbstractPropEditorClass); overload;
@@ -170,6 +171,14 @@ begin
   else
   if LItem.Data.IsType<TComboBox>  then
     LItem.Data.AsType<TComboBox>.ItemIndex:= APropValue.AsInteger;
+end;
+
+procedure TEditorInspector.Filter(const AFilterText: string);
+var
+  LPair: TPair<string,TCustomTreeViewItem>;
+begin
+  for LPair in FItemMap do
+    LPair.Value.Visible:= AFilterText.Trim.IsEmpty or (LPair.Key.ToLower.Contains(AFilterText.ToLower));
 end;
 
 end.
