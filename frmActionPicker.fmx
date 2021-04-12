@@ -1,0 +1,94 @@
+object ActionPickerFrm: TActionPickerFrm
+  Left = 0
+  Top = 0
+  Caption = 'Action Picker'
+  ClientHeight = 626
+  ClientWidth = 850
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Left
+    Size.Width = 225.000000000000000000
+    Size.Height = 547.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 225.000000000000000000
+      Size.Height = 547.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 221.000000000000000000
+      Viewport.Height = 521.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        TabOrder = 0
+        Text = 'register.action'
+      end
+      object ListBoxItem2: TListBoxItem
+        Position.Y = 19.000000000000000000
+        TabOrder = 1
+        Text = 'login.action'
+      end
+      object SearchBox1: TSearchBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 0
+        Size.Width = 221.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Align = Client
+    Size.Width = 620.000000000000000000
+    Size.Height = 547.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 620.000000000000000000
+    Viewport.Height = 547.000000000000000000
+    object PaintBox1: TPaintBox
+      Size.Width = 512.000000000000000000
+      Size.Height = 512.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 225.000000000000000000
+    Size.Width = 5.000000000000000000
+    Size.Height = 547.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Position.Y = 547.000000000000000000
+    Size.Width = 850.000000000000000000
+    Size.Height = 79.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Button2: TButton
+      Position.X = 744.000000000000000000
+      Position.Y = 41.000000000000000000
+      TabOrder = 3
+      Text = 'Cancel'
+      OnClick = Button2Click
+    end
+    object Button1: TButton
+      Position.X = 632.000000000000000000
+      Position.Y = 41.000000000000000000
+      TabOrder = 1
+      Text = 'OK'
+      OnClick = Button1Click
+    end
+  end
+end

@@ -1,0 +1,38 @@
+object TextEditorFrm: TTextEditorFrm
+  Left = 0
+  Top = 0
+  Caption = 'Text Editor'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 48.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 537.000000000000000000
+    Size.Height = 385.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 537.000000000000000000
+    Viewport.Height = 385.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 424.000000000000000000
+    Position.Y = 440.000000000000000000
+    TabOrder = 2
+    Text = 'OK'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 536.000000000000000000
+    Position.Y = 440.000000000000000000
+    TabOrder = 3
+    Text = 'Cancel'
+    OnClick = Button2Click
+  end
+end

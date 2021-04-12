@@ -1,0 +1,124 @@
+object TexturePickerFrm: TTexturePickerFrm
+  Left = 0
+  Top = 0
+  Caption = 'Texture Picker'
+  ClientHeight = 647
+  ClientWidth = 848
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Left
+    Size.Width = 257.000000000000000000
+    Size.Height = 568.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object TreeView1: TTreeView
+      Align = Client
+      Size.Width = 257.000000000000000000
+      Size.Height = 568.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = False
+      MultiSelect = True
+      Viewport.Width = 253.000000000000000000
+      Viewport.Height = 564.000000000000000000
+      object TreeViewItem1: TTreeViewItem
+        IsChecked = False
+        IsExpanded = True
+        IsSelected = False
+        TabOrder = 0
+        Text = 'start.atlas [1024*1024][5]'
+        object TreeViewItem3: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = False
+          TabOrder = 0
+          Text = 'start_noticebtn [0,0,100,100]'
+        end
+        object TreeViewItem4: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = True
+          TabOrder = 1
+          Text = 'start_noticebg [0,0,100,100]'
+        end
+        object TreeViewItem5: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = True
+          TabOrder = 2
+          Text = 'start_startbtn [0,0,100,100]'
+        end
+        object TreeViewItem6: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = False
+          TabOrder = 3
+          Text = 'start_accountinfobg [0,0,100,100]'
+        end
+        object TreeViewItem7: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = False
+          TabOrder = 4
+          Text = 'start_healthytextbg [0,0,100,100]'
+        end
+      end
+      object TreeViewItem2: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 1
+        Text = 'role.atlas'
+      end
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Align = Client
+    Size.Width = 586.000000000000000000
+    Size.Height = 568.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 586.000000000000000000
+    Viewport.Height = 568.000000000000000000
+    object PaintBox1: TPaintBox
+      Size.Width = 512.000000000000000000
+      Size.Height = 512.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 257.000000000000000000
+    Size.Width = 5.000000000000000000
+    Size.Height = 568.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Position.Y = 568.000000000000000000
+    Size.Width = 848.000000000000000000
+    Size.Height = 79.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Button2: TButton
+      Position.X = 744.000000000000000000
+      Position.Y = 41.000000000000000000
+      TabOrder = 3
+      Text = 'Cancel'
+      OnClick = Button2Click
+    end
+    object Button1: TButton
+      Position.X = 632.000000000000000000
+      Position.Y = 41.000000000000000000
+      TabOrder = 1
+      Text = 'OK'
+      OnClick = Button1Click
+    end
+  end
+end
