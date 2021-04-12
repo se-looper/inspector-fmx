@@ -2,7 +2,7 @@
 FMX下通用可扩展的属性编辑器
 
 
-#构造示例:
+# 构造示例:
 ```Delphi
   FEditorInspector:= TEditorInspector.Create(lytLeft);
   FEditorInspector.Parent:= lytLeft;
@@ -16,7 +16,7 @@ FMX下通用可扩展的属性编辑器
   FEditorInspector.RegisterPropEditor('TActionName', TActionNamePropEditor);
 ```
 
-#调用示例:
+# 调用示例:
 ```Delphi
 procedure TMainFrm.pbxRendererMouseLeave(Sender: TObject);
 begin
@@ -24,6 +24,6 @@ begin
 end;
 ```
 
-#效果图:
+# 效果图:
 
 ![inspector screenshot](https://github.com/se-looper/inspector-fmx/blob/main/inspector.png)
