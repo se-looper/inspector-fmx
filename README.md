@@ -1,7 +1,7 @@
 # inspector-fmx
 FMX下通用可扩展的属性编辑器
 
-基于TTreeView，相关代码：
+
 1、构造示例
   FEditorInspector:= TEditorInspector.Create(lytLeft);
   FEditorInspector.Parent:= lytLeft;
