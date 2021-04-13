@@ -122,6 +122,9 @@ begin
   LComparer:= TPropNameComparer.Create;
   Self.BeginUpdate;
   try
+    if not Assigned(ASender) then
+      Exit;
+    //
     RT:= RTX.GetType(ASender.ClassType);
     RPS:= RT.GetProperties;
     TArray.Sort<TRttiProperty>(RPS, LComparer);
